@@ -1,0 +1,54 @@
+.media-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+}
+
+.media-controls__prev:disabled,
+.media-controls__next:disabled {
+  opacity: 0.5;
+}
+
+.media-controls__seek {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.media-controls__duration {
+  flex: 1;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.wrapper > * {
+  width: 100%;
+}
+
+.mcBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
