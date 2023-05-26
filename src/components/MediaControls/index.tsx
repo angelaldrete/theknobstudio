@@ -91,7 +91,7 @@ const MediaControls: React.FC<MediaControlsProps> = ({
 
   return (
     <div className="media-controls">
-      <div className="wrapper">
+      <div className="wrapper seek">
         <input
           className="media-controls__seek"
           type="range"
@@ -113,7 +113,7 @@ const MediaControls: React.FC<MediaControlsProps> = ({
           </span>
         </div>
       </div>
-      <div className="wrapper">
+      <div className="wrapper controls">
         <audio 
           ref={audioRef} 
           src={audioSrc}
@@ -147,7 +147,7 @@ const MediaControls: React.FC<MediaControlsProps> = ({
           <FontAwesomeIcon icon={faStop} />
         </button>
       </div>
-      <div className="wrapper">
+      <div className="wrapper volume">
         <button 
           className="mcBtn media-controls__mute"
           onClick={() => {

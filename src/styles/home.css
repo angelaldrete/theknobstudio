@@ -10,9 +10,31 @@
   height: 100%;
 }
 
+.show {
+  animation: show 0.5s ease-in-out forwards 0.5s;
+}
+
 .song__wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .home .song__wrapper {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@keyframes show {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

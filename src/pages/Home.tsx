@@ -1,6 +1,8 @@
 import React, { useEffect } from "react"
 import SongItem from '@components/SongItem'
 import MediaControls from '@components/MediaControls'
+import Background from '@components/Background'
+import Title from '@components/Title'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStepForward, faStepBackward } from '@fortawesome/free-solid-svg-icons'
 import songList from "../data/songs"
@@ -33,7 +35,6 @@ const Home = () => {
       retrieveFromLocalData()
     }
   }, [songs])
-
   /**
    * 
    * @returns void
@@ -97,8 +98,9 @@ const Home = () => {
 
   return (
     <div className="home">
+      <Background imgSrc={song.imgSrc} />
       <div className="song">
-        <div className="song__wrapper">
+        <div className="song__wrapper show">
           <button 
             className="mcBtn media-controls__prev"
             onClick={() => handleSongChange(Direction.previous)}

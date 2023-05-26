@@ -1,0 +1,34 @@
+.contact {
+  margin-top: 2rem;
+  animation: appear 0.75s ease-in-out;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #D5B02F;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #D5B02F;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-top: 4rem;
+  }
+  
+  .contact h1 {
+    font-size: 3rem;
+  }
+  
+  .contact p {
+    font-size: 2rem;
+  }
+}

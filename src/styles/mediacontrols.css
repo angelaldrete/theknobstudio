@@ -6,6 +6,10 @@
   animation: fadeIn 0.5s ease-in-out;
   width: 100%;
   max-width: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
 }
 
 .media-controls__prev:disabled,
@@ -16,6 +20,18 @@
 .media-controls__seek {
   flex: 2;
   margin-right: 10px;
+}
+
+input[type="range"] {
+  align-self: center;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
 
 .media-controls__duration {
@@ -42,6 +58,11 @@
   margin: 0 1rem;
 }
 
+.mcBtn svg:hover {
+  color: #D5B02F;
+}
+
+
 @keyframes fadeIn {
   from {
     transform: translateY(20px);
@@ -50,5 +71,49 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .media-controls {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .seek {
+    order: 2;
+    flex: 10;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+
+  .controls {
+    order: 1;
+    flex: 3;
+    margin-right: 20px;
+    margin-top: 0;
+  }
+
+  .volume {
+    order: 3;
+    flex: 3;
+    margin-top: 0;
+  }
+
+  .media-controls__seek {
+    margin-right: 20px;
+    flex: 3;
+  }
+
+  .media-controls__mute {
+    flex: 1;
+  }
+
+  .media-controls__duration {
+    flex: 1;
   }
 }
