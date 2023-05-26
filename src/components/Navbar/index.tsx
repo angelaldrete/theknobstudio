@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import '@styles/logo.css';
-import '@styles/navbar.css';
-import logo from '@assets/logo.svg';
+import '../../styles/logo.css';
+import '../../styles/navbar.css';
+import logo from '../../assets/logo.svg';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {

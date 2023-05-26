@@ -5,7 +5,7 @@ import Background from '../components/Background'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStepForward, faStepBackward } from '@fortawesome/free-solid-svg-icons'
 import songList from "../data/songs"
-import '@styles/home.css'
+import '../styles/home.css'
 
 interface Song {
   title: string,

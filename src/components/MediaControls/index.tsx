@@ -1,7 +1,7 @@
 import { faPause, faPlay, faStop, faVolumeUp, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react"
-import '@styles/mediacontrols.css'
+import '../../styles/mediacontrols.css'
 
 interface MediaControlsProps {
   audioSrc: string;

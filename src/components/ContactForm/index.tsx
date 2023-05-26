@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, {useEffect} from 'react'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import '@styles/contact-form.css'
+import '../../styles/contact-form.css'
 
 const ContactForm = () => {
   const formRef = React.useRef<HTMLFormElement>(null)

@@ -1,5 +1,5 @@
 import React from 'react'
-import '@styles/song-item.css'
+import '../../styles/song-item.css'
 
 interface SongItemProps {
   songTitle: string,

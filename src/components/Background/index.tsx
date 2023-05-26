@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import '@styles/background.css'
+import '../../styles/background.css'
 
 interface BackgroundProps {
   imgSrc: string;
