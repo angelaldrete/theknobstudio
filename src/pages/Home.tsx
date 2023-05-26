@@ -1,8 +1,7 @@
 import React, { useEffect } from "react"
-import SongItem from '@components/SongItem'
-import MediaControls from '@components/MediaControls'
-import Background from '@components/Background'
-import Title from '@components/Title'
+import SongItem from '../components/SongItem'
+import MediaControls from '../components/MediaControls'
+import Background from '../components/Background'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStepForward, faStepBackward } from '@fortawesome/free-solid-svg-icons'
 import songList from "../data/songs"
